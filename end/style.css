@@ -1,0 +1,279 @@
+body {
+    background: url(img/background.svg) no-repeat top center #82d8cb;
+    background-size: cover;
+}
+
+.calendar {
+    width: 96%;
+    max-width: 900px;
+    margin:2% auto;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 25px;
+    grid-template-areas:
+        "t     t     t     d2      d7      d8"
+        "t     t     t     d4      d11     d12"
+        "t     t     t     d19     d9      d13"
+        "d6    d1    d24   d24     d21     d20"
+        "d17   d18   d24   d24     d5      d22"
+        "d3    d23   d16   d14     d10     d15";
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title img {
+    width: 90%;
+    height: auto;
+}
+
+.day {
+    perspective: 1000px;
+}
+
+.door{
+    height: 120px;
+    min-height: 100%;
+    position: relative;
+    cursor: pointer;
+    border: 2px dashed transparent;
+    border-radius:10px;
+    transition: all 300ms;
+    transform-style: preserve-3d;
+}
+
+.door:hover {
+    border-color: #385052;
+}
+
+.door div {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    /* typo */
+    font-family: 'Kalam', cursive;
+    color: #385052;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.door .back {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #2e313d;
+    transform:rotateY(180deg);
+}
+
+.door.flip {
+    transform:rotateY(180deg);
+}
+
+/* grid elems */
+
+.title {
+    grid-area: t;
+}
+
+.day[data-day='1'] {
+    grid-area:d1;
+}
+
+.day[data-day='1'] .back {
+    background-image:url(img/day1.svg);
+}
+
+.day[data-day='2'] {
+    grid-area:d2;
+}
+
+.day[data-day='2'] .back {
+    background-image:url(img/day2.svg);
+}
+
+.day[data-day='3'] {
+    grid-area:d3;
+}
+
+.day[data-day='3'] .back {
+    background-image:url(img/day3.svg);
+}
+
+.day[data-day='4'] {
+    grid-area:d4;
+}
+
+.day[data-day='4'] .back {
+    background-image:url(img/day4.svg);
+}
+
+.day[data-day='5'] {
+    grid-area:d5;
+}
+
+.day[data-day='5'] .back {
+    background-image:url(img/day5.svg);
+}
+
+.day[data-day='6'] {
+    grid-area:d6;
+}
+
+.day[data-day='6'] .back {
+    background-image:url(img/day6.svg);
+}
+
+.day[data-day='7'] {
+    grid-area:d7;
+}
+
+.day[data-day='7'] .back {
+    background-image:url(img/day7.svg);
+}
+
+.day[data-day='8'] {
+    grid-area:d8;
+}
+
+.day[data-day='8'] .back {
+    background-image:url(img/day8.svg);
+}
+
+.day[data-day='9'] {
+    grid-area:d9;
+}
+
+.day[data-day='9'] .back {
+    background-image:url(img/day9.svg);
+}
+
+.day[data-day='10'] {
+    grid-area:d10;
+}
+
+.day[data-day='10'] .back {
+    background-image:url(img/day10.svg);
+}
+
+.day[data-day='11'] {
+    grid-area:d11;
+}
+
+.day[data-day='11'] .back {
+    background-image:url(img/day11.svg);
+}
+
+.day[data-day='12'] {
+    grid-area:d12;
+}
+
+.day[data-day='12'] .back {
+    background-image:url(img/day12.svg);
+}
+
+.day[data-day='13'] {
+    grid-area:d13;
+}
+
+.day[data-day='13'] .back {
+    background-image:url(img/day13.svg);
+}
+
+.day[data-day='14'] {
+    grid-area:d14;
+}
+
+.day[data-day='14'] .back {
+    background-image:url(img/day14.svg);
+}
+
+.day[data-day='15'] {
+    grid-area:d15;
+}
+
+.day[data-day='15'] .back {
+    background-image:url(img/day15.svg);
+}
+
+.day[data-day='16'] {
+    grid-area:d16;
+}
+
+.day[data-day='16'] .back {
+    background-image:url(img/day16.svg);
+}
+
+.day[data-day='17'] {
+    grid-area:d17;
+}
+
+.day[data-day='17'] .back {
+    background-image:url(img/day17.svg);
+}
+
+.day[data-day='18'] {
+    grid-area:d18;
+}
+
+.day[data-day='18'] .back {
+    background-image:url(img/day18.svg);
+}
+
+.day[data-day='19'] {
+    grid-area:d19;
+}
+
+.day[data-day='19'] .back {
+    background-image:url(img/day19.svg);
+}
+
+.day[data-day='20'] {
+    grid-area:d20;
+}
+
+.day[data-day='20'] .back {
+    background-image:url(img/day20.svg);
+}
+
+.day[data-day='21'] {
+    grid-area:d21;
+}
+
+.day[data-day='21'] .back {
+    background-image:url(img/day21.svg);
+}
+
+.day[data-day='22'] {
+    grid-area:d22;
+}
+
+.day[data-day='22'] .back {
+    background-image:url(img/day22.svg);
+}
+
+.day[data-day='23'] {
+    grid-area:d23;
+}
+
+.day[data-day='23'] .back {
+    background-image:url(img/day23.svg);
+}
+
+.day[data-day='24'] {
+    grid-area:d24;
+}
+
+.day[data-day='24'] .back {
+    background-image:url(img/day24.svg);
+}
