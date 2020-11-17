@@ -279,3 +279,19 @@ body {
 .day[data-day='24'] .back {
     background-image:url(../images/day24.svg);
 }
+
+@media only screen and (max-width:640px){
+    .calendar{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "t     t     t"
+            "d23    d20     d12"
+            "d2     d14     d4"
+            "d5     d22     d16"
+            "d1     d7      d9"
+            "d10    d11     d18"
+            "d13    d3      d15"
+            "d6     d17     d8"
+            "d19    d24     d21";
+    }
+}
