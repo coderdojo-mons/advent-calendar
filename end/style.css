@@ -1,5 +1,5 @@
 body {
-    background: url(img/background.svg) no-repeat top center #82d8cb;
+    background: url(../images/background.svg) no-repeat top center #82d8cb;
     background-size: cover;
 }
 
@@ -39,10 +39,11 @@ body {
 .door{
     height: 120px;
     min-height: 100%;
-    position: relative;
     cursor: pointer;
     border: 2px dashed transparent;
     border-radius:10px;
+    position: relative;
+
     transition: all 300ms;
     transform-style: preserve-3d;
 }
@@ -52,21 +53,22 @@ body {
 }
 
 .door div {
-
     width: 100%;
     height: 100%;
+    border-radius: 6px;
     position: absolute;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    backface-visibility: hidden;
-    border-radius: 6px;
-    /* typo */
+
     font-family: 'Kalam', cursive;
     color: #385052;
     font-size: 2em;
     font-weight: bold;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.2);
+
+    backface-visibility: hidden;
 }
 
 .door .back {
@@ -80,7 +82,7 @@ body {
     transform:rotateY(180deg);
 }
 
-/* grid elems */
+/* grid cells */
 
 .title {
     grid-area: t;
@@ -91,7 +93,7 @@ body {
 }
 
 .day[data-day='1'] .back {
-    background-image:url(img/day1.svg);
+    background-image:url(../images/day1.svg);
 }
 
 .day[data-day='2'] {
@@ -99,7 +101,7 @@ body {
 }
 
 .day[data-day='2'] .back {
-    background-image:url(img/day2.svg);
+    background-image:url(../images/day2.svg);
 }
 
 .day[data-day='3'] {
@@ -107,7 +109,7 @@ body {
 }
 
 .day[data-day='3'] .back {
-    background-image:url(img/day3.svg);
+    background-image:url(../images/day3.svg);
 }
 
 .day[data-day='4'] {
@@ -115,7 +117,7 @@ body {
 }
 
 .day[data-day='4'] .back {
-    background-image:url(img/day4.svg);
+    background-image:url(../images/day4.svg);
 }
 
 .day[data-day='5'] {
@@ -123,7 +125,7 @@ body {
 }
 
 .day[data-day='5'] .back {
-    background-image:url(img/day5.svg);
+    background-image:url(../images/day5.svg);
 }
 
 .day[data-day='6'] {
@@ -131,7 +133,7 @@ body {
 }
 
 .day[data-day='6'] .back {
-    background-image:url(img/day6.svg);
+    background-image:url(../images/day6.svg);
 }
 
 .day[data-day='7'] {
@@ -139,7 +141,7 @@ body {
 }
 
 .day[data-day='7'] .back {
-    background-image:url(img/day7.svg);
+    background-image:url(../images/day7.svg);
 }
 
 .day[data-day='8'] {
@@ -147,7 +149,7 @@ body {
 }
 
 .day[data-day='8'] .back {
-    background-image:url(img/day8.svg);
+    background-image:url(../images/day8.svg);
 }
 
 .day[data-day='9'] {
@@ -155,7 +157,7 @@ body {
 }
 
 .day[data-day='9'] .back {
-    background-image:url(img/day9.svg);
+    background-image:url(../images/day9.svg);
 }
 
 .day[data-day='10'] {
@@ -163,7 +165,7 @@ body {
 }
 
 .day[data-day='10'] .back {
-    background-image:url(img/day10.svg);
+    background-image:url(../images/day10.svg);
 }
 
 .day[data-day='11'] {
@@ -171,7 +173,7 @@ body {
 }
 
 .day[data-day='11'] .back {
-    background-image:url(img/day11.svg);
+    background-image:url(../images/day11.svg);
 }
 
 .day[data-day='12'] {
@@ -179,7 +181,7 @@ body {
 }
 
 .day[data-day='12'] .back {
-    background-image:url(img/day12.svg);
+    background-image:url(../images/day12.svg);
 }
 
 .day[data-day='13'] {
@@ -187,7 +189,7 @@ body {
 }
 
 .day[data-day='13'] .back {
-    background-image:url(img/day13.svg);
+    background-image:url(../images/day13.svg);
 }
 
 .day[data-day='14'] {
@@ -195,7 +197,7 @@ body {
 }
 
 .day[data-day='14'] .back {
-    background-image:url(img/day14.svg);
+    background-image:url(../images/day14.svg);
 }
 
 .day[data-day='15'] {
@@ -203,7 +205,7 @@ body {
 }
 
 .day[data-day='15'] .back {
-    background-image:url(img/day15.svg);
+    background-image:url(../images/day15.svg);
 }
 
 .day[data-day='16'] {
@@ -211,7 +213,7 @@ body {
 }
 
 .day[data-day='16'] .back {
-    background-image:url(img/day16.svg);
+    background-image:url(../images/day16.svg);
 }
 
 .day[data-day='17'] {
@@ -219,7 +221,7 @@ body {
 }
 
 .day[data-day='17'] .back {
-    background-image:url(img/day17.svg);
+    background-image:url(../images/day17.svg);
 }
 
 .day[data-day='18'] {
@@ -227,7 +229,7 @@ body {
 }
 
 .day[data-day='18'] .back {
-    background-image:url(img/day18.svg);
+    background-image:url(../images/day18.svg);
 }
 
 .day[data-day='19'] {
@@ -235,7 +237,7 @@ body {
 }
 
 .day[data-day='19'] .back {
-    background-image:url(img/day19.svg);
+    background-image:url(../images/day19.svg);
 }
 
 .day[data-day='20'] {
@@ -243,7 +245,7 @@ body {
 }
 
 .day[data-day='20'] .back {
-    background-image:url(img/day20.svg);
+    background-image:url(../images/day20.svg);
 }
 
 .day[data-day='21'] {
@@ -251,7 +253,7 @@ body {
 }
 
 .day[data-day='21'] .back {
-    background-image:url(img/day21.svg);
+    background-image:url(../images/day21.svg);
 }
 
 .day[data-day='22'] {
@@ -259,7 +261,7 @@ body {
 }
 
 .day[data-day='22'] .back {
-    background-image:url(img/day22.svg);
+    background-image:url(../images/day22.svg);
 }
 
 .day[data-day='23'] {
@@ -267,7 +269,7 @@ body {
 }
 
 .day[data-day='23'] .back {
-    background-image:url(img/day23.svg);
+    background-image:url(../images/day23.svg);
 }
 
 .day[data-day='24'] {
@@ -275,5 +277,5 @@ body {
 }
 
 .day[data-day='24'] .back {
-    background-image:url(img/day24.svg);
+    background-image:url(../images/day24.svg);
 }
