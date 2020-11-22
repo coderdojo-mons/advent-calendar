@@ -1,5 +1,13 @@
+/* Styles par défaut pour tout les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    /* doc:https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing */ 
+    box-sizing: border-box;
+}
+
 body {
-    background: url(../images/background.svg) no-repeat top center #82d8cb;
+    background: url(../dist/images/background.svg) no-repeat top center #82d8cb;
     background-size: cover;
 }
 
@@ -93,7 +101,7 @@ body {
 }
 
 .day[data-day='1'] .back {
-    background-image:url(../images/day1.svg);
+    background-image:url(../dist/images/day1.svg);
 }
 
 .day[data-day='2'] {
@@ -101,7 +109,7 @@ body {
 }
 
 .day[data-day='2'] .back {
-    background-image:url(../images/day2.svg);
+    background-image:url(../dist/images/day2.svg);
 }
 
 .day[data-day='3'] {
@@ -109,7 +117,7 @@ body {
 }
 
 .day[data-day='3'] .back {
-    background-image:url(../images/day3.svg);
+    background-image:url(../dist/images/day3.svg);
 }
 
 .day[data-day='4'] {
@@ -117,7 +125,7 @@ body {
 }
 
 .day[data-day='4'] .back {
-    background-image:url(../images/day4.svg);
+    background-image:url(../dist/images/day4.svg);
 }
 
 .day[data-day='5'] {
@@ -125,7 +133,7 @@ body {
 }
 
 .day[data-day='5'] .back {
-    background-image:url(../images/day5.svg);
+    background-image:url(../dist/images/day5.svg);
 }
 
 .day[data-day='6'] {
@@ -133,7 +141,7 @@ body {
 }
 
 .day[data-day='6'] .back {
-    background-image:url(../images/day6.svg);
+    background-image:url(../dist/images/day6.svg);
 }
 
 .day[data-day='7'] {
@@ -141,7 +149,7 @@ body {
 }
 
 .day[data-day='7'] .back {
-    background-image:url(../images/day7.svg);
+    background-image:url(../dist/images/day7.svg);
 }
 
 .day[data-day='8'] {
@@ -149,7 +157,7 @@ body {
 }
 
 .day[data-day='8'] .back {
-    background-image:url(../images/day8.svg);
+    background-image:url(../dist/images/day8.svg);
 }
 
 .day[data-day='9'] {
@@ -157,7 +165,7 @@ body {
 }
 
 .day[data-day='9'] .back {
-    background-image:url(../images/day9.svg);
+    background-image:url(../dist/images/day9.svg);
 }
 
 .day[data-day='10'] {
@@ -165,7 +173,7 @@ body {
 }
 
 .day[data-day='10'] .back {
-    background-image:url(../images/day10.svg);
+    background-image:url(../dist/images/day10.svg);
 }
 
 .day[data-day='11'] {
@@ -173,7 +181,7 @@ body {
 }
 
 .day[data-day='11'] .back {
-    background-image:url(../images/day11.svg);
+    background-image:url(../dist/images/day11.svg);
 }
 
 .day[data-day='12'] {
@@ -181,7 +189,7 @@ body {
 }
 
 .day[data-day='12'] .back {
-    background-image:url(../images/day12.svg);
+    background-image:url(../dist/images/day12.svg);
 }
 
 .day[data-day='13'] {
@@ -189,7 +197,7 @@ body {
 }
 
 .day[data-day='13'] .back {
-    background-image:url(../images/day13.svg);
+    background-image:url(../dist/images/day13.svg);
 }
 
 .day[data-day='14'] {
@@ -197,7 +205,7 @@ body {
 }
 
 .day[data-day='14'] .back {
-    background-image:url(../images/day14.svg);
+    background-image:url(../dist/images/day14.svg);
 }
 
 .day[data-day='15'] {
@@ -205,7 +213,7 @@ body {
 }
 
 .day[data-day='15'] .back {
-    background-image:url(../images/day15.svg);
+    background-image:url(../dist/images/day15.svg);
 }
 
 .day[data-day='16'] {
@@ -213,7 +221,7 @@ body {
 }
 
 .day[data-day='16'] .back {
-    background-image:url(../images/day16.svg);
+    background-image:url(../dist/images/day16.svg);
 }
 
 .day[data-day='17'] {
@@ -221,7 +229,7 @@ body {
 }
 
 .day[data-day='17'] .back {
-    background-image:url(../images/day17.svg);
+    background-image:url(../dist/images/day17.svg);
 }
 
 .day[data-day='18'] {
@@ -229,7 +237,7 @@ body {
 }
 
 .day[data-day='18'] .back {
-    background-image:url(../images/day18.svg);
+    background-image:url(../dist/images/day18.svg);
 }
 
 .day[data-day='19'] {
@@ -237,7 +245,7 @@ body {
 }
 
 .day[data-day='19'] .back {
-    background-image:url(../images/day19.svg);
+    background-image:url(../dist/images/day19.svg);
 }
 
 .day[data-day='20'] {
@@ -245,7 +253,7 @@ body {
 }
 
 .day[data-day='20'] .back {
-    background-image:url(../images/day20.svg);
+    background-image:url(../dist/images/day20.svg);
 }
 
 .day[data-day='21'] {
@@ -253,7 +261,7 @@ body {
 }
 
 .day[data-day='21'] .back {
-    background-image:url(../images/day21.svg);
+    background-image:url(../dist/images/day21.svg);
 }
 
 .day[data-day='22'] {
@@ -261,7 +269,7 @@ body {
 }
 
 .day[data-day='22'] .back {
-    background-image:url(../images/day22.svg);
+    background-image:url(../dist/images/day22.svg);
 }
 
 .day[data-day='23'] {
@@ -269,7 +277,7 @@ body {
 }
 
 .day[data-day='23'] .back {
-    background-image:url(../images/day23.svg);
+    background-image:url(../dist/images/day23.svg);
 }
 
 .day[data-day='24'] {
@@ -277,7 +285,7 @@ body {
 }
 
 .day[data-day='24'] .back {
-    background-image:url(../images/day24.svg);
+    background-image:url(../dist/images/day24.svg);
 }
 
 @media only screen and (max-width:640px){
