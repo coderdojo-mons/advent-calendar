@@ -1,0 +1,13 @@
+/* Styles par défaut pour tout les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    /* doc:https://developer.mozilla.org/fr/docs/Web/CSS/box-sizing */ 
+    box-sizing: border-box;
+}
+
+.calendar {
+    width: 96%;
+    max-width: 900px;
+    margin:2% auto;
+}
