@@ -1,4 +1,4 @@
-# Mery Gridmas
+# Merry Gridmas
 
 ### Sources
 
